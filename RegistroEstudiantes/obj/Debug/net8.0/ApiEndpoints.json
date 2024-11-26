@@ -1,0 +1,59 @@
+[
+  {
+    "ContainingType": "RegistroEstudiantes.Controllers.EstudianteController",
+    "Method": "RegistroAlumno",
+    "RelativePath": "api/Estudiante",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "objeto",
+        "Type": "RegistroEstudiantes.Models.Estudiante1",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RegistroEstudiantes.Controllers.EstudianteController",
+    "Method": "Lista",
+    "RelativePath": "api/Estudiante/lista",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RegistroEstudiantes.Controllers.EstudianteController",
+    "Method": "Materias",
+    "RelativePath": "api/Estudiante/materias",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RegistroEstudiantes.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[RegistroEstudiantes.WeatherForecast, RegistroEstudiantes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]
