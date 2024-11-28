@@ -1,4 +1,5 @@
-Registro de Estudiantes 📚
+#Registro de Estudiantes 📚
+
 Este proyecto es una API RESTful diseñada para administrar un sistema de registro y consulta de estudiantes. 
 Está construida con ASP.NET Core y permite realizar operaciones como listar estudiantes, 
 consultar información por clases o materias, y registrar nuevos alumnos.
