@@ -1,10 +1,12 @@
-# Project Title 📚
+# Registro Alumno 📚
 
 Este proyecto es una API RESTful diseñada para administrar un sistema de registro y consulta de estudiantes. 
 Está construida con ASP.NET Core y permite realizar operaciones como listar estudiantes, 
 consultar información por clases o materias, y registrar nuevos alumnos.
 
-Funcionalidades
+
+### Funcionalidades
+
 Obtener la lista completa de estudiantes
 
 Endpoint: GET /api/Estudiante/lista
@@ -22,20 +24,17 @@ Registrar un nuevo estudiante
 Endpoint: POST /api/Estudiante
 Requiere un objeto JSON con la información del estudiante.
 
-Tecnologías utilizadas
-ASP.NET Core para la creación del backend.
-Entity Framework (suponiendo que se utiliza para interactuar con la base de datos).
-Inyección de dependencias para gestionar la lógica de acceso a datos (EstudianteData).
-Cómo iniciar el proyecto
-Cómo iniciar el proyecto
-Clona el repositorio:
 
-bash
+### Tecnologías utilizadas
+ASP.NET Core 8.0 para la creación del backend.
+Entity Framework
+Inyección de dependencias para gestionar la lógica de acceso a datos (EstudianteData).
+
+
+### Ejecuta el proyecto:
+
 Copiar código
 git clone https://github.com/usuario/registro-estudiantes.git
-Configura la conexión a la base de datos en el archivo appsettings.json.
-
-Ejecuta el proyecto:
 
 Configuración de la Base de Datos
 Antes de ejecutar la aplicación, es necesario configurar la base de datos en SQL Server creando las tablas y procedimientos almacenados necesarios.
@@ -53,11 +52,12 @@ Reemplaza el valor actual con la cadena de conexión de tu base de datos.
 bash
 Copiar código
 dotnet run
-Accede a la API en http://localhost:5000/api/Estudiante.
+Accede a la API en http://localhost:5041/api/Estudiante.
 
-Requisitos del sistema
+### Requisitos del sistema
 .NET Core SDK 6.0 o superior.
 Una base de datos configurada compatible con el proyecto.
+
 Cómo contribuir
 1.Realiza un fork del repositorio.
 2.Crea una rama para tu funcionalidad (git checkout -b nueva-funcionalidad).
