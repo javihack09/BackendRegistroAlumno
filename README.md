@@ -7,22 +7,22 @@ consultar información por clases o materias, y registrar nuevos alumnos.
 
 ### Funcionalidades
 
-Obtener la lista completa de estudiantes
+
 
 Endpoint: GET /api/Estudiante/lista
-Consultar estudiantes por clase específica
+Obtener la lista completa de estudiantes
 
 Endpoint: GET /api/Estudiante/clase?clase={nombreClase}
-Obtener la lista de materias disponibles
+Consultar estudiantes por clase específica
 
 Endpoint: GET /api/Estudiante/materias
-Consultar detalles de un estudiante por ID
+Obtener la lista de materias disponibles
 
 Endpoint: GET /api/Estudiante/{id}
-Registrar un nuevo estudiante
+Consultar detalles de un estudiante por ID
 
 Endpoint: POST /api/Estudiante
-Requiere un objeto JSON con la información del estudiante.
+Registrar un nuevo estudiante
 
 
 ### Tecnologías utilizadas
