@@ -21,7 +21,7 @@ namespace RegistroEstudiantes.Data
             using (var con = new SqlConnection(conexion))
             {
                 await con.OpenAsync();
-                SqlCommand cmd = new SqlCommand("select * from Estudiante", con);
+                SqlCommand cmd = new SqlCommand("select NombreAlumno as nombreAlumno ,C.NombreMateria as nombreMateria,D.NombreProfesor as nombreProfesor from MateriasEstudiante as A inner join Estudiante as B ON A.IdEstudiante = B.IdEstudiante inner join Materias as C ON C.IdMaterias = A.IdMateria inner join Profesor as D ON C.idProfesor = D.IdProfesor", con);
                 cmd.CommandType = CommandType.Text;
 
                 using (var reader = await cmd.ExecuteReaderAsync())
@@ -32,11 +32,9 @@ namespace RegistroEstudiantes.Data
                         lista.Add(new Estudiante
                         {
 
-                            IdEstudiante = Convert.ToInt32(reader["IdEstudiante"]),
-                            NombreAlumno = reader["NombreAlumno"].ToString(),
-                            Materia1 = reader["Materia1"].ToString(),
-                            Materia2 = reader["Materia2"].ToString(),
-                            Materia3 = reader["Materia3"].ToString()
+                            nombreAlumno = reader["nombreAlumno"].ToString(),
+                            nombreMateria = reader["nombreMateria"].ToString(),
+                            nombreProfesor = reader["nombreProfesor"].ToString()
 
                         });
 
@@ -49,9 +47,10 @@ namespace RegistroEstudiantes.Data
 
         }
 
-        public async Task<bool> RegistroAlumno(Estudiante1 objeto)
+        public async Task<int> RegistroAlumno(Estudiante1 objeto)
         {
-            bool respuesta = true;
+
+            int idGenerado = 0; 
 
             using (var con = new SqlConnection(conexion))
             {
@@ -71,17 +70,17 @@ namespace RegistroEstudiantes.Data
                 try
                 {
                     await con.OpenAsync();
-                    respuesta = await cmd.ExecuteNonQueryAsync() > 0 ? true:false ;
-                    
+                    idGenerado = Convert.ToInt32(await cmd.ExecuteScalarAsync());
+
                 }
                 catch 
                 {
-                    respuesta = false;
+                    idGenerado = 0;
                 
                 }
             }
 
-            return respuesta;
+            return idGenerado;
 
         }
 
@@ -92,7 +91,7 @@ namespace RegistroEstudiantes.Data
             using (var con = new SqlConnection(conexion))
             {
                 await con.OpenAsync();
-                SqlCommand cmd = new SqlCommand("select * from Materias", con);
+                SqlCommand cmd = new SqlCommand("select IdMaterias,NombreMateria,Creditos,A.idProfesor,NombreProfesor,selected from Materias as A inner join [dbo].[Profesor] as B ON A.idProfesor = B.IdProfesor", con);
                 cmd.CommandType = CommandType.Text;
 
                 using (var reader = await cmd.ExecuteReaderAsync())
@@ -106,7 +105,76 @@ namespace RegistroEstudiantes.Data
                             IdMaterias = Convert.ToInt32(reader["IdMaterias"]),
                             NombreMateria = reader["NombreMateria"].ToString(),
                             Creditos = reader["Creditos"].ToString(),
-                            idProfesor = reader["idProfesor"].ToString()
+                            idProfesor = reader["idProfesor"].ToString(),
+                            NombreProfesor = reader["NombreProfesor"].ToString()
+
+                        });
+
+                    }
+
+                }
+            }
+
+            return lista;
+
+        }
+
+        public async Task<List<Estudiante>> Obtener(int Id)
+        {
+            List<Estudiante> lista = new List<Estudiante>();
+
+            using (var con = new SqlConnection(conexion))
+            {
+                await con.OpenAsync();
+                SqlCommand cmd = new SqlCommand("sp_obtener", con);
+                cmd.Parameters.AddWithValue("@idAlumno",Id);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                using (var reader = await cmd.ExecuteReaderAsync())
+                {
+                    while (await reader.ReadAsync())
+                    {
+
+                        lista.Add(new Estudiante
+                        {
+
+                            nombreAlumno = reader["nombreAlumno"].ToString(),
+                            nombreMateria = reader["nombreMateria"].ToString(),
+                            nombreProfesor = reader["nombreProfesor"].ToString()
+
+                        });
+
+                    }
+
+                }
+            }
+
+            return lista;
+
+        }
+
+        public async Task<List<Estudiante>> verClase(string clase)
+        {
+            List<Estudiante> lista = new List<Estudiante>();
+
+            using (var con = new SqlConnection(conexion))
+            {
+                await con.OpenAsync();
+
+                SqlCommand cmd = new SqlCommand("select NombreAlumno as nombreAlumno, C.NombreMateria as nombreMateria, D.NombreProfesor as nombreProfesor from MateriasEstudiante as A inner join Estudiante as B ON A.IdEstudiante = B.IdEstudiante inner join Materias as C ON C.IdMaterias = A.IdMateria inner join Profesor as D ON C.idProfesor = D.IdProfesor where C.NombreMateria = '"+clase+"'", con);
+                cmd.CommandType = CommandType.Text;
+
+                using (var reader = await cmd.ExecuteReaderAsync())
+                {
+                    while (await reader.ReadAsync())
+                    {
+
+                        lista.Add(new Estudiante
+                        {
+
+                            nombreAlumno = reader["nombreAlumno"].ToString(),
+                            nombreMateria = reader["nombreMateria"].ToString(),
+                            nombreProfesor = reader["nombreProfesor"].ToString()
 
                         });
 

@@ -17,6 +17,38 @@
   },
   {
     "ContainingType": "RegistroEstudiantes.Controllers.EstudianteController",
+    "Method": "Obtener",
+    "RelativePath": "api/Estudiante/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RegistroEstudiantes.Controllers.EstudianteController",
+    "Method": "verClase",
+    "RelativePath": "api/Estudiante/clase",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clase",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RegistroEstudiantes.Controllers.EstudianteController",
     "Method": "Lista",
     "RelativePath": "api/Estudiante/lista",
     "HttpMethod": "GET",

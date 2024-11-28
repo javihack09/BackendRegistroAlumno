@@ -24,6 +24,13 @@ namespace RegistroEstudiantes.Controllers
 
             return StatusCode(StatusCodes.Status200OK, Lista);
         }
+        [HttpGet("clase")]
+        public async Task<IActionResult> verClase(string clase)
+        {
+            List<Estudiante> Lista = await _estudiantedata.verClase(clase);
+
+            return StatusCode(StatusCodes.Status200OK, Lista);
+        }
 
         [HttpGet("materias")]
         public async Task<IActionResult> Materias()
@@ -33,12 +40,20 @@ namespace RegistroEstudiantes.Controllers
             return StatusCode(StatusCodes.Status200OK, Lista);
         }
 
+        [HttpGet("{id}")]
+        public async Task<IActionResult> Obtener(int id)
+        {
+            List<Estudiante> Lista = await _estudiantedata.Obtener(id);
+
+            return StatusCode(StatusCodes.Status200OK, Lista);
+        }
+
         [HttpPost]
         public async Task<IActionResult> RegistroAlumno([FromBody] Estudiante1 objeto)
         {
-            bool respuesta = await _estudiantedata.RegistroAlumno(objeto);
+            int respuesta = await _estudiantedata.RegistroAlumno(objeto);
 
-            return StatusCode(StatusCodes.Status200OK, new {isSuccess = respuesta});
+            return StatusCode(StatusCodes.Status200OK, new {id = respuesta});
         }
     }
 }

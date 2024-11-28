@@ -2,13 +2,10 @@
 {
     public class Estudiante
     {
-        public int IdEstudiante { get; set; }
+        public string? nombreAlumno { get; set; }
 
-        public string? NombreAlumno { get; set; }
-
-        public string? Materia1 { get; set; }
-        public string? Materia2 { get; set; }
-        public string? Materia3 { get; set; }
+        public string? nombreMateria { get; set; }
+        public string? nombreProfesor { get; set; }
 
     }
     public class Estudiante1
@@ -34,6 +31,7 @@
 
         public string? Creditos { get; set; }
         public string? idProfesor { get; set; }
+        public string? NombreProfesor { get; set; }
 
     }
 }

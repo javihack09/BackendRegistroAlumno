@@ -17,10 +17,54 @@
         }
       }
     },
+    "/api/Estudiante/clase": {
+      "get": {
+        "tags": [
+          "Estudiante"
+        ],
+        "parameters": [
+          {
+            "name": "clase",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Estudiante/materias": {
       "get": {
         "tags": [
           "Estudiante"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Estudiante/{id}": {
+      "get": {
+        "tags": [
+          "Estudiante"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
         ],
         "responses": {
           "200": {

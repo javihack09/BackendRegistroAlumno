@@ -76,3 +76,4 @@ C:\Users\PC-94647\source\repos\RegistroEstudiantes\RegistroEstudiantes\obj\Debug
 C:\Users\PC-94647\source\repos\RegistroEstudiantes\RegistroEstudiantes\obj\Debug\net8.0\RegistroEstudiantes.pdb
 C:\Users\PC-94647\source\repos\RegistroEstudiantes\RegistroEstudiantes\obj\Debug\net8.0\RegistroEstudiantes.genruntimeconfig.cache
 C:\Users\PC-94647\source\repos\RegistroEstudiantes\RegistroEstudiantes\obj\Debug\net8.0\ref\RegistroEstudiantes.dll
+C:\Users\PC-94647\source\repos\RegistroEstudiantes\RegistroEstudiantes\obj\Debug\net8.0\RegistroEstudiantes.sourcelink.json
