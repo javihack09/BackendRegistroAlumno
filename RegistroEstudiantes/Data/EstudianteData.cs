@@ -14,6 +14,92 @@ namespace RegistroEstudiantes.Data
             conexion = configuration.GetConnectionString("StringSQL")!;
         }
 
+        public async Task<int> IniciarSesion(string correo,string clave)
+        {
+            int IdGenerado = 0;
+
+            using (var con = new SqlConnection(conexion))
+            {
+                string insertQuery = @"select IdRegistro from RegistroLogin where Correo = @Correo AND Clave = @Clave;";
+
+                SqlCommand cmd = new SqlCommand(insertQuery, con);
+                cmd.CommandType = CommandType.Text;
+
+                cmd.Parameters.AddWithValue("@Correo", correo);
+                cmd.Parameters.AddWithValue("@Clave", clave);
+                try
+                {
+                    await con.OpenAsync();
+                    IdGenerado = Convert.ToInt32(await cmd.ExecuteScalarAsync());
+                }
+                catch
+                {
+                    IdGenerado = 0;
+                }
+            }
+
+            return IdGenerado;
+        }
+
+        public async Task<int> Duplicidad(string correo)
+        {
+            int conteo = 0;
+
+            using (var con = new SqlConnection(conexion))
+            {
+                string insertQuery = @"select COUNT(Correo) from RegistroLogin where Correo = @Correo;";
+
+                SqlCommand cmd = new SqlCommand(insertQuery, con);
+                cmd.CommandType = CommandType.Text;
+
+                cmd.Parameters.AddWithValue("@Correo", correo);
+                try
+                {
+                    await con.OpenAsync();
+                    conteo = Convert.ToInt32(await cmd.ExecuteScalarAsync());
+                }
+                catch
+                {
+                    conteo = 0;
+                }
+            }
+
+            return conteo;
+        }
+
+        public async Task<int> RegistrarUsuario(RegistroLogin objeto)
+        {
+            int idGenerado = 0;
+
+            using (var con = new SqlConnection(conexion))
+            {
+                string insertQuery = @"
+            INSERT INTO RegistroLogin (NombreCompleto, Correo, Rol, Clave) 
+            VALUES (@NombreCompleto, @Correo, @Rol, @Clave);
+            SELECT SCOPE_IDENTITY();";
+
+                SqlCommand cmd = new SqlCommand(insertQuery, con);
+                cmd.CommandType = CommandType.Text;
+
+                cmd.Parameters.AddWithValue("@NombreCompleto", objeto.nombrecompleto); 
+                cmd.Parameters.AddWithValue("@Correo", objeto.correo);
+                cmd.Parameters.AddWithValue("@Rol", objeto.rol);
+                cmd.Parameters.AddWithValue("@Clave", objeto.clave); 
+                try
+                {
+                    await con.OpenAsync();
+                    idGenerado = Convert.ToInt32(await cmd.ExecuteScalarAsync());
+                }
+                catch
+                {
+                    idGenerado = 0;
+                }
+            }
+
+            return idGenerado;
+        }
+
+
         public async Task<List<Estudiante>> Lista()
         {
             List<Estudiante> lista = new List<Estudiante>();
@@ -61,7 +147,7 @@ namespace RegistroEstudiantes.Data
                 cmd.CommandType = CommandType.StoredProcedure;
 
                 
-                cmd.Parameters.AddWithValue("@NombreAlumno", objeto.NombreAlumno);
+                cmd.Parameters.AddWithValue("@IdEstudiante", objeto.IdEstudiante);
                 cmd.Parameters.AddWithValue("@creditos", 9 );
                 cmd.Parameters.AddWithValue("@Materia1", objeto.Materia1);
                 cmd.Parameters.AddWithValue("@Materia2", objeto.Materia2);
