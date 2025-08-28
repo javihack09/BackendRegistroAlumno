@@ -49,6 +49,43 @@
   },
   {
     "ContainingType": "RegistroEstudiantes.Controllers.EstudianteController",
+    "Method": "Duplicidad",
+    "RelativePath": "api/Estudiante/Duplicidad",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "correo",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RegistroEstudiantes.Controllers.EstudianteController",
+    "Method": "InicioSesion",
+    "RelativePath": "api/Estudiante/InicioSesion",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "correo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "clave",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RegistroEstudiantes.Controllers.EstudianteController",
     "Method": "Lista",
     "RelativePath": "api/Estudiante/lista",
     "HttpMethod": "GET",
@@ -68,24 +105,19 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "RegistroEstudiantes.Controllers.WeatherForecastController",
-    "Method": "Get",
-    "RelativePath": "WeatherForecast",
-    "HttpMethod": "GET",
+    "ContainingType": "RegistroEstudiantes.Controllers.EstudianteController",
+    "Method": "RegistroLogin",
+    "RelativePath": "api/Estudiante/RegistroLogin",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
+    "Parameters": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[RegistroEstudiantes.WeatherForecast, RegistroEstudiantes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
+        "Name": "objeto",
+        "Type": "RegistroEstudiantes.Models.RegistroLogin",
+        "IsRequired": true
       }
     ],
-    "EndpointName": "GetWeatherForecast"
+    "ReturnTypes": []
   }
 ]

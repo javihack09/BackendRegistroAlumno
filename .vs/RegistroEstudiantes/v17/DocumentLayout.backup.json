@@ -1,9 +1,29 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\PC-94647\\source\\repos\\RegistroEstudiantes\\",
+  "WorkspaceRootPath": "C:\\Users\\javiericamachoa\\Documents\\Proyectos Personales\\PruebaInterrapidisimo\\BackendRegistroAlumno\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D97CA9CD-4F63-4994-9A0E-8F70FB4556D1}|RegistroEstudiantes\\RegistroEstudiantes.csproj|c:\\users\\pc-94647\\source\\repos\\registroestudiantes\\registroestudiantes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D97CA9CD-4F63-4994-9A0E-8F70FB4556D1}|RegistroEstudiantes\\RegistroEstudiantes.csproj|c:\\users\\javiericamachoa\\documents\\proyectos personales\\pruebainterrapidisimo\\backendregistroalumno\\registroestudiantes\\controllers\\estudiantecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D97CA9CD-4F63-4994-9A0E-8F70FB4556D1}|RegistroEstudiantes\\RegistroEstudiantes.csproj|solutionrelative:registroestudiantes\\controllers\\estudiantecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D97CA9CD-4F63-4994-9A0E-8F70FB4556D1}|RegistroEstudiantes\\RegistroEstudiantes.csproj|c:\\users\\javiericamachoa\\documents\\proyectos personales\\pruebainterrapidisimo\\backendregistroalumno\\registroestudiantes\\data\\estudiantedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D97CA9CD-4F63-4994-9A0E-8F70FB4556D1}|RegistroEstudiantes\\RegistroEstudiantes.csproj|solutionrelative:registroestudiantes\\data\\estudiantedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D97CA9CD-4F63-4994-9A0E-8F70FB4556D1}|RegistroEstudiantes\\RegistroEstudiantes.csproj|c:\\users\\javiericamachoa\\documents\\proyectos personales\\pruebainterrapidisimo\\backendregistroalumno\\registroestudiantes\\models\\estudiante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D97CA9CD-4F63-4994-9A0E-8F70FB4556D1}|RegistroEstudiantes\\RegistroEstudiantes.csproj|solutionrelative:registroestudiantes\\models\\estudiante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D97CA9CD-4F63-4994-9A0E-8F70FB4556D1}|RegistroEstudiantes\\RegistroEstudiantes.csproj|c:\\users\\javiericamachoa\\documents\\proyectos personales\\pruebainterrapidisimo\\backendregistroalumno\\registroestudiantes\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D97CA9CD-4F63-4994-9A0E-8F70FB4556D1}|RegistroEstudiantes\\RegistroEstudiantes.csproj|solutionrelative:registroestudiantes\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D97CA9CD-4F63-4994-9A0E-8F70FB4556D1}|RegistroEstudiantes\\RegistroEstudiantes.csproj|c:\\users\\javiericamachoa\\documents\\proyectos personales\\pruebainterrapidisimo\\backendregistroalumno\\registroestudiantes\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D97CA9CD-4F63-4994-9A0E-8F70FB4556D1}|RegistroEstudiantes\\RegistroEstudiantes.csproj|solutionrelative:registroestudiantes\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D97CA9CD-4F63-4994-9A0E-8F70FB4556D1}|RegistroEstudiantes\\RegistroEstudiantes.csproj|c:\\users\\javiericamachoa\\documents\\proyectos personales\\pruebainterrapidisimo\\backendregistroalumno\\registroestudiantes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D97CA9CD-4F63-4994-9A0E-8F70FB4556D1}|RegistroEstudiantes\\RegistroEstudiantes.csproj|solutionrelative:registroestudiantes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -13,16 +33,84 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "DockedWidth": 100,
+          "SelectedChildIndex": 26,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1493710656:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:138:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
             },
             {
               "$type": "Bookmark",
@@ -33,17 +121,100 @@
               "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Estudiante.cs",
+              "DocumentMoniker": "C:\\Users\\javiericamachoa\\Documents\\Proyectos Personales\\PruebaInterrapidisimo\\BackendRegistroAlumno\\RegistroEstudiantes\\Models\\Estudiante.cs",
+              "RelativeDocumentMoniker": "RegistroEstudiantes\\Models\\Estudiante.cs",
+              "ToolTip": "C:\\Users\\javiericamachoa\\Documents\\Proyectos Personales\\PruebaInterrapidisimo\\BackendRegistroAlumno\\RegistroEstudiantes\\Models\\Estudiante.cs",
+              "RelativeToolTip": "RegistroEstudiantes\\Models\\Estudiante.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T15:54:10.63Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\javiericamachoa\\Documents\\Proyectos Personales\\PruebaInterrapidisimo\\BackendRegistroAlumno\\RegistroEstudiantes\\appsettings.json",
+              "RelativeDocumentMoniker": "RegistroEstudiantes\\appsettings.json",
+              "ToolTip": "C:\\Users\\javiericamachoa\\Documents\\Proyectos Personales\\PruebaInterrapidisimo\\BackendRegistroAlumno\\RegistroEstudiantes\\appsettings.json",
+              "RelativeToolTip": "RegistroEstudiantes\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-27T15:21:45.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EstudianteData.cs",
+              "DocumentMoniker": "C:\\Users\\javiericamachoa\\Documents\\Proyectos Personales\\PruebaInterrapidisimo\\BackendRegistroAlumno\\RegistroEstudiantes\\Data\\EstudianteData.cs",
+              "RelativeDocumentMoniker": "RegistroEstudiantes\\Data\\EstudianteData.cs",
+              "ToolTip": "C:\\Users\\javiericamachoa\\Documents\\Proyectos Personales\\PruebaInterrapidisimo\\BackendRegistroAlumno\\RegistroEstudiantes\\Data\\EstudianteData.cs",
+              "RelativeToolTip": "RegistroEstudiantes\\Data\\EstudianteData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBAAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T14:53:58.184Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "EstudianteController.cs",
+              "DocumentMoniker": "C:\\Users\\javiericamachoa\\Documents\\Proyectos Personales\\PruebaInterrapidisimo\\BackendRegistroAlumno\\RegistroEstudiantes\\Controllers\\EstudianteController.cs",
+              "RelativeDocumentMoniker": "RegistroEstudiantes\\Controllers\\EstudianteController.cs",
+              "ToolTip": "C:\\Users\\javiericamachoa\\Documents\\Proyectos Personales\\PruebaInterrapidisimo\\BackendRegistroAlumno\\RegistroEstudiantes\\Controllers\\EstudianteController.cs*",
+              "RelativeToolTip": "RegistroEstudiantes\\Controllers\\EstudianteController.cs*",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAwE0AAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T14:53:46.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\javiericamachoa\\Documents\\Proyectos Personales\\PruebaInterrapidisimo\\BackendRegistroAlumno\\RegistroEstudiantes\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "RegistroEstudiantes\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\javiericamachoa\\Documents\\Proyectos Personales\\PruebaInterrapidisimo\\BackendRegistroAlumno\\RegistroEstudiantes\\appsettings.Development.json",
+              "RelativeToolTip": "RegistroEstudiantes\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-27T15:37:32.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\PC-94647\\source\\repos\\RegistroEstudiantes\\RegistroEstudiantes\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\javiericamachoa\\Documents\\Proyectos Personales\\PruebaInterrapidisimo\\BackendRegistroAlumno\\RegistroEstudiantes\\Program.cs",
               "RelativeDocumentMoniker": "RegistroEstudiantes\\Program.cs",
-              "ToolTip": "C:\\Users\\PC-94647\\source\\repos\\RegistroEstudiantes\\RegistroEstudiantes\\Program.cs",
+              "ToolTip": "C:\\Users\\javiericamachoa\\Documents\\Proyectos Personales\\PruebaInterrapidisimo\\BackendRegistroAlumno\\RegistroEstudiantes\\Program.cs",
               "RelativeToolTip": "RegistroEstudiantes\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-28T00:11:05.27Z",
               "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 300,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             }
           ]
         }

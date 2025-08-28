@@ -1,5 +1,13 @@
 ﻿namespace RegistroEstudiantes.Models
 {
+    public class RegistroLogin
+    {
+        public string? nombrecompleto { get; set; }
+        public string? correo { get; set; }
+        public string? rol { get; set; }
+        public string? clave { get; set; }
+
+    }
     public class Estudiante
     {
         public string? nombreAlumno { get; set; }

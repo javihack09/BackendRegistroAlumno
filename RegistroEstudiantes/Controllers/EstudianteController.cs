@@ -55,5 +55,28 @@ namespace RegistroEstudiantes.Controllers
 
             return StatusCode(StatusCodes.Status200OK, new {id = respuesta});
         }
+        [HttpPost("RegistroLogin")]
+        public async Task<IActionResult> RegistroLogin([FromBody] RegistroLogin objeto)
+        {
+            int respuesta = await _estudiantedata.RegistrarUsuario(objeto);
+
+            return StatusCode(StatusCodes.Status200OK, new { id = respuesta });
+        }
+
+        [HttpGet("Duplicidad")]
+        public async Task<IActionResult> Duplicidad(string correo)
+        {
+            int conteo = await _estudiantedata.Duplicidad(correo);
+
+            return StatusCode(StatusCodes.Status200OK, new { duplicidad = (conteo >= 1) });
+        }
+        [HttpGet("InicioSesion")]
+        public async Task<IActionResult> InicioSesion(string correo,string clave)
+        {
+            int idregistro =  await _estudiantedata.IniciarSesion(correo, clave); 
+
+            return StatusCode(StatusCodes.Status200OK, new { id = idregistro });
+        }
+
     }
 }
