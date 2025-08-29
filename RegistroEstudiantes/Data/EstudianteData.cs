@@ -14,6 +14,32 @@ namespace RegistroEstudiantes.Data
             conexion = configuration.GetConnectionString("StringSQL")!;
         }
 
+        public async Task<int> DobleRegistro(string idregistro)
+        {
+            int conteo = 0;
+
+            using (var con = new SqlConnection(conexion))
+            {
+                string insertQuery = @"select count(*) from MateriasEstudiante where IdEstudiante = @idregistro;";
+
+                SqlCommand cmd = new SqlCommand(insertQuery, con);
+                cmd.CommandType = CommandType.Text;
+
+                cmd.Parameters.AddWithValue("@idregistro", idregistro);
+                try
+                {
+                    await con.OpenAsync();
+                    conteo = Convert.ToInt32(await cmd.ExecuteScalarAsync());
+                }
+                catch
+                {
+                    conteo = 0;
+                }
+            }
+
+            return conteo;
+        }
+
         public async Task<int> IniciarSesion(string correo,string clave)
         {
             int IdGenerado = 0;
@@ -133,10 +159,10 @@ namespace RegistroEstudiantes.Data
 
         }
 
-        public async Task<int> RegistroAlumno(Estudiante1 objeto)
+        public async Task<string> RegistroAlumno(Estudiante1 objeto)
         {
 
-            int idGenerado = 0; 
+            string nombre = ""; 
 
             using (var con = new SqlConnection(conexion))
             {
@@ -156,17 +182,17 @@ namespace RegistroEstudiantes.Data
                 try
                 {
                     await con.OpenAsync();
-                    idGenerado = Convert.ToInt32(await cmd.ExecuteScalarAsync());
-
+                    var result = await cmd.ExecuteScalarAsync();
+                    nombre = result?.ToString();
                 }
                 catch 
                 {
-                    idGenerado = 0;
+                    nombre = "";
                 
                 }
             }
 
-            return idGenerado;
+            return nombre;
 
         }
 

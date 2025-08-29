@@ -156,6 +156,27 @@
         }
       }
     },
+    "/api/Estudiante/DobleRegistro": {
+      "get": {
+        "tags": [
+          "Estudiante"
+        ],
+        "parameters": [
+          {
+            "name": "idregistro",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Estudiante/InicioSesion": {
       "get": {
         "tags": [

@@ -49,6 +49,22 @@
   },
   {
     "ContainingType": "RegistroEstudiantes.Controllers.EstudianteController",
+    "Method": "DobleRegistro",
+    "RelativePath": "api/Estudiante/DobleRegistro",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idregistro",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RegistroEstudiantes.Controllers.EstudianteController",
     "Method": "Duplicidad",
     "RelativePath": "api/Estudiante/Duplicidad",
     "HttpMethod": "GET",
