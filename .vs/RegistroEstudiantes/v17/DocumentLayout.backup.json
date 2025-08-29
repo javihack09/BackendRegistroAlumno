@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\javiericamachoa\\Documents\\Proyectos Personales\\PruebaInterrapidisimo\\BackendRegistroAlumno\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D97CA9CD-4F63-4994-9A0E-8F70FB4556D1}|RegistroEstudiantes\\RegistroEstudiantes.csproj|c:\\users\\javiericamachoa\\documents\\proyectos personales\\pruebainterrapidisimo\\backendregistroalumno\\registroestudiantes\\data\\estudiantedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D97CA9CD-4F63-4994-9A0E-8F70FB4556D1}|RegistroEstudiantes\\RegistroEstudiantes.csproj|solutionrelative:registroestudiantes\\data\\estudiantedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D97CA9CD-4F63-4994-9A0E-8F70FB4556D1}|RegistroEstudiantes\\RegistroEstudiantes.csproj|c:\\users\\javiericamachoa\\documents\\proyectos personales\\pruebainterrapidisimo\\backendregistroalumno\\registroestudiantes\\controllers\\estudiantecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D97CA9CD-4F63-4994-9A0E-8F70FB4556D1}|RegistroEstudiantes\\RegistroEstudiantes.csproj|solutionrelative:registroestudiantes\\controllers\\estudiantecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D97CA9CD-4F63-4994-9A0E-8F70FB4556D1}|RegistroEstudiantes\\RegistroEstudiantes.csproj|c:\\users\\javiericamachoa\\documents\\proyectos personales\\pruebainterrapidisimo\\backendregistroalumno\\registroestudiantes\\data\\estudiantedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D97CA9CD-4F63-4994-9A0E-8F70FB4556D1}|RegistroEstudiantes\\RegistroEstudiantes.csproj|solutionrelative:registroestudiantes\\data\\estudiantedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D97CA9CD-4F63-4994-9A0E-8F70FB4556D1}|RegistroEstudiantes\\RegistroEstudiantes.csproj|c:\\users\\javiericamachoa\\documents\\proyectos personales\\pruebainterrapidisimo\\backendregistroalumno\\registroestudiantes\\models\\estudiante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 100,
-          "SelectedChildIndex": 24,
+          "SelectedChildIndex": 25,
           "Children": [
             {
               "$type": "Bookmark",
@@ -147,26 +147,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "EstudianteData.cs",
               "DocumentMoniker": "C:\\Users\\javiericamachoa\\Documents\\Proyectos Personales\\PruebaInterrapidisimo\\BackendRegistroAlumno\\RegistroEstudiantes\\Data\\EstudianteData.cs",
               "RelativeDocumentMoniker": "RegistroEstudiantes\\Data\\EstudianteData.cs",
               "ToolTip": "C:\\Users\\javiericamachoa\\Documents\\Proyectos Personales\\PruebaInterrapidisimo\\BackendRegistroAlumno\\RegistroEstudiantes\\Data\\EstudianteData.cs",
               "RelativeToolTip": "RegistroEstudiantes\\Data\\EstudianteData.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAowBsAAABFAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAkwBsAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-27T14:53:58.184Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "EstudianteController.cs",
               "DocumentMoniker": "C:\\Users\\javiericamachoa\\Documents\\Proyectos Personales\\PruebaInterrapidisimo\\BackendRegistroAlumno\\RegistroEstudiantes\\Controllers\\EstudianteController.cs",
               "RelativeDocumentMoniker": "RegistroEstudiantes\\Controllers\\EstudianteController.cs",
               "ToolTip": "C:\\Users\\javiericamachoa\\Documents\\Proyectos Personales\\PruebaInterrapidisimo\\BackendRegistroAlumno\\RegistroEstudiantes\\Controllers\\EstudianteController.cs",
               "RelativeToolTip": "RegistroEstudiantes\\Controllers\\EstudianteController.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAiwFIAAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAiwFEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-27T14:53:46.702Z",
               "EditorCaption": ""
