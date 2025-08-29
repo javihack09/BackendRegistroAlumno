@@ -15,6 +15,10 @@
       "RelativeMoniker": "D:0:0:{D97CA9CD-4F63-4994-9A0E-8F70FB4556D1}|RegistroEstudiantes\\RegistroEstudiantes.csproj|solutionrelative:registroestudiantes\\models\\estudiante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{D97CA9CD-4F63-4994-9A0E-8F70FB4556D1}|RegistroEstudiantes\\RegistroEstudiantes.csproj|c:\\users\\javiericamachoa\\documents\\proyectos personales\\pruebainterrapidisimo\\backendregistroalumno\\registroestudiantes\\utilidades\\encripcionaes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D97CA9CD-4F63-4994-9A0E-8F70FB4556D1}|RegistroEstudiantes\\RegistroEstudiantes.csproj|solutionrelative:registroestudiantes\\utilidades\\encripcionaes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D97CA9CD-4F63-4994-9A0E-8F70FB4556D1}|RegistroEstudiantes\\RegistroEstudiantes.csproj|c:\\users\\javiericamachoa\\documents\\proyectos personales\\pruebainterrapidisimo\\backendregistroalumno\\registroestudiantes\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{D97CA9CD-4F63-4994-9A0E-8F70FB4556D1}|RegistroEstudiantes\\RegistroEstudiantes.csproj|solutionrelative:registroestudiantes\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -34,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 100,
-          "SelectedChildIndex": 26,
+          "SelectedChildIndex": 25,
           "Children": [
             {
               "$type": "Bookmark",
@@ -130,20 +134,59 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EncripcionAES.cs",
+              "DocumentMoniker": "C:\\Users\\javiericamachoa\\Documents\\Proyectos Personales\\PruebaInterrapidisimo\\BackendRegistroAlumno\\RegistroEstudiantes\\Utilidades\\EncripcionAES.cs",
+              "RelativeDocumentMoniker": "RegistroEstudiantes\\Utilidades\\EncripcionAES.cs",
+              "ToolTip": "C:\\Users\\javiericamachoa\\Documents\\Proyectos Personales\\PruebaInterrapidisimo\\BackendRegistroAlumno\\RegistroEstudiantes\\Utilidades\\EncripcionAES.cs",
+              "RelativeToolTip": "RegistroEstudiantes\\Utilidades\\EncripcionAES.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAwwFEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T20:25:23.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EstudianteData.cs",
+              "DocumentMoniker": "C:\\Users\\javiericamachoa\\Documents\\Proyectos Personales\\PruebaInterrapidisimo\\BackendRegistroAlumno\\RegistroEstudiantes\\Data\\EstudianteData.cs",
+              "RelativeDocumentMoniker": "RegistroEstudiantes\\Data\\EstudianteData.cs",
+              "ToolTip": "C:\\Users\\javiericamachoa\\Documents\\Proyectos Personales\\PruebaInterrapidisimo\\BackendRegistroAlumno\\RegistroEstudiantes\\Data\\EstudianteData.cs",
+              "RelativeToolTip": "RegistroEstudiantes\\Data\\EstudianteData.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAkwBsAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T14:53:58.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EstudianteController.cs",
+              "DocumentMoniker": "C:\\Users\\javiericamachoa\\Documents\\Proyectos Personales\\PruebaInterrapidisimo\\BackendRegistroAlumno\\RegistroEstudiantes\\Controllers\\EstudianteController.cs",
+              "RelativeDocumentMoniker": "RegistroEstudiantes\\Controllers\\EstudianteController.cs",
+              "ToolTip": "C:\\Users\\javiericamachoa\\Documents\\Proyectos Personales\\PruebaInterrapidisimo\\BackendRegistroAlumno\\RegistroEstudiantes\\Controllers\\EstudianteController.cs*",
+              "RelativeToolTip": "RegistroEstudiantes\\Controllers\\EstudianteController.cs*",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAiwFEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T14:53:46.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Estudiante.cs",
               "DocumentMoniker": "C:\\Users\\javiericamachoa\\Documents\\Proyectos Personales\\PruebaInterrapidisimo\\BackendRegistroAlumno\\RegistroEstudiantes\\Models\\Estudiante.cs",
               "RelativeDocumentMoniker": "RegistroEstudiantes\\Models\\Estudiante.cs",
               "ToolTip": "C:\\Users\\javiericamachoa\\Documents\\Proyectos Personales\\PruebaInterrapidisimo\\BackendRegistroAlumno\\RegistroEstudiantes\\Models\\Estudiante.cs",
               "RelativeToolTip": "RegistroEstudiantes\\Models\\Estudiante.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAUwBIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-27T15:54:10.63Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\javiericamachoa\\Documents\\Proyectos Personales\\PruebaInterrapidisimo\\BackendRegistroAlumno\\RegistroEstudiantes\\appsettings.json",
               "RelativeDocumentMoniker": "RegistroEstudiantes\\appsettings.json",
@@ -156,33 +199,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EstudianteData.cs",
-              "DocumentMoniker": "C:\\Users\\javiericamachoa\\Documents\\Proyectos Personales\\PruebaInterrapidisimo\\BackendRegistroAlumno\\RegistroEstudiantes\\Data\\EstudianteData.cs",
-              "RelativeDocumentMoniker": "RegistroEstudiantes\\Data\\EstudianteData.cs",
-              "ToolTip": "C:\\Users\\javiericamachoa\\Documents\\Proyectos Personales\\PruebaInterrapidisimo\\BackendRegistroAlumno\\RegistroEstudiantes\\Data\\EstudianteData.cs",
-              "RelativeToolTip": "RegistroEstudiantes\\Data\\EstudianteData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBAAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-27T14:53:58.184Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "EstudianteController.cs",
-              "DocumentMoniker": "C:\\Users\\javiericamachoa\\Documents\\Proyectos Personales\\PruebaInterrapidisimo\\BackendRegistroAlumno\\RegistroEstudiantes\\Controllers\\EstudianteController.cs",
-              "RelativeDocumentMoniker": "RegistroEstudiantes\\Controllers\\EstudianteController.cs",
-              "ToolTip": "C:\\Users\\javiericamachoa\\Documents\\Proyectos Personales\\PruebaInterrapidisimo\\BackendRegistroAlumno\\RegistroEstudiantes\\Controllers\\EstudianteController.cs",
-              "RelativeToolTip": "RegistroEstudiantes\\Controllers\\EstudianteController.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAQwE0AAABMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-27T14:53:46.702Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\javiericamachoa\\Documents\\Proyectos Personales\\PruebaInterrapidisimo\\BackendRegistroAlumno\\RegistroEstudiantes\\appsettings.Development.json",
               "RelativeDocumentMoniker": "RegistroEstudiantes\\appsettings.Development.json",
@@ -195,7 +212,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\javiericamachoa\\Documents\\Proyectos Personales\\PruebaInterrapidisimo\\BackendRegistroAlumno\\RegistroEstudiantes\\Program.cs",
               "RelativeDocumentMoniker": "RegistroEstudiantes\\Program.cs",

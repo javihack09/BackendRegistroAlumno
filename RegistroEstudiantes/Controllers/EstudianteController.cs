@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 using RegistroEstudiantes.Data;
 using RegistroEstudiantes.Models;
+using RegistroEstudiantes.Utilidades;
 
 namespace RegistroEstudiantes.Controllers
 {
@@ -51,13 +52,18 @@ namespace RegistroEstudiantes.Controllers
         [HttpPost]
         public async Task<IActionResult> RegistroAlumno([FromBody] Estudiante1 objeto)
         {
-            int respuesta = await _estudiantedata.RegistroAlumno(objeto);
+            string respuesta = await _estudiantedata.RegistroAlumno(objeto);
 
             return StatusCode(StatusCodes.Status200OK, new {id = respuesta});
         }
         [HttpPost("RegistroLogin")]
         public async Task<IActionResult> RegistroLogin([FromBody] RegistroLogin objeto)
         {
+            if (!string.IsNullOrWhiteSpace(objeto.clave))
+            {
+                objeto.clave = EncripcionAES.Encrypt(objeto.clave);
+            }
+
             int respuesta = await _estudiantedata.RegistrarUsuario(objeto);
 
             return StatusCode(StatusCodes.Status200OK, new { id = respuesta });
@@ -70,10 +76,26 @@ namespace RegistroEstudiantes.Controllers
 
             return StatusCode(StatusCodes.Status200OK, new { duplicidad = (conteo >= 1) });
         }
+
+        [HttpGet("DobleRegistro")]
+        public async Task<IActionResult> DobleRegistro(string idregistro)
+        {
+            int conteo = await _estudiantedata.DobleRegistro(idregistro);
+
+            return StatusCode(StatusCodes.Status200OK, new { duplicidad = (conteo >= 1) });
+        }
+
         [HttpGet("InicioSesion")]
         public async Task<IActionResult> InicioSesion(string correo,string clave)
         {
-            int idregistro =  await _estudiantedata.IniciarSesion(correo, clave); 
+            string clavedecrypt = ""; 
+
+            if (!string.IsNullOrWhiteSpace(clave))
+            {
+                clavedecrypt = EncripcionAES.Encrypt(clave);
+            }
+
+            int idregistro =  await _estudiantedata.IniciarSesion(correo, clavedecrypt); 
 
             return StatusCode(StatusCodes.Status200OK, new { id = idregistro });
         }
